@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <script src="ticTacToe.js"></script>
+        <script src="ticTacToeField.js"></script>
+        <link rel="stylesheet" type="text/css" href="ticTacToe.css" />
+    </head>
+    <body>
+    <h3>Tic Tac Toe</h3>
+    <p>Play a round of good ol' TicTacToe. Player 1, please tap a square to begin :D</p>
+
+    <div id="playground">
+      Oops! JavaScript doesn't work here :(
+    </div>
+
+    <script>
+      //Empty the div-element that will contain the ticTacToeField
+      var playgroundDiv = document.getElementById("playground");
+      playgroundDiv.innerHTML="";
+
+      //create new ticTacToeField
+      var field = new ticTacToeField(playgroundDiv);
+
+      //createplayground();
+      //resizeTable();
+    </script>
+
+    <p id="cPlayer">Current player : 1</p>
+    <button onClick=resetGame()>Reset</button>
+
+    <p class = "overlay">
+      HELLO
+    </p>
+    </body>
+</html>
